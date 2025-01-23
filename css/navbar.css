@@ -1,0 +1,138 @@
+nav{
+    padding: 0px 5%;
+    width: 100%;
+    height: var(--nvbar-height1);
+    max-width: 2000px;
+    margin: 0px auto;
+}
+
+/*nav leftside*/
+.leftnav a svg{
+    width: 50px;
+}
+.leftnav{
+    gap: 2.1rem;
+}
+.leftnav .links{
+    display: flex;
+    gap: 1.3rem;
+}
+.leftnav .links .link{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.leftnav .links .active::after{
+    position: absolute;
+    background-color: var(--color-lgreen);
+    content: "";
+    height: 6px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+}
+.leftnav .links .link a{
+    font-weight: 700 !important;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: .85rem !important;
+    color: var(--color-text-black);
+    line-height: var(--nvbar-height1);
+}
+.leftnav .links .link a:hover{
+    color: var(--color-lgreen);
+}
+
+/*nav rightside*/
+.rightnav{
+    gap: 3rem;
+}
+.rightnav .location-fas a{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    color: var(--color-text-black);
+}
+.rightnav .location-fas a:hover{
+    color: var(--color-lgreen);
+}
+.rightnav .location-fas a i{
+    font-size: 1.2rem;
+}
+.rightnav .location-fas a span{
+    font-size: .8rem;
+    font-weight: 700;
+}
+.rightnav .user-options{
+    display: flex;
+    margin-right: 0rem;
+}
+.rightnav .user-options a{
+    margin-right: 1rem;
+    font-size: .85rem;
+    color: var(--color-text-black);
+    border: 1px solid var(--color-text-black);
+    padding: 7px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.rightnav .user-options a:last-child{
+    margin-right: 1.1rem;
+    font-size: .85rem;
+    color: white;
+    background-color: var(--color-text-black);
+    border: 1px solid white;
+    padding: 7px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.rightnav .user-options a:first-child:hover{
+    background-color: #0000001a;
+}
+.rightnav .user-options a:last-child:hover{
+    opacity: .8;
+}
+
+
+
+
+/* */
+nav,.leftnav,.rightnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width : 1025px){
+    nav{
+        padding: 0px 1.5rem;
+        height: var(--nvbar-height);
+    }
+    .leftnav{
+        gap: 1.4rem;
+    }
+    .leftnav .links{
+        gap: 1.3rem;
+    }
+    .leftnav .links .link a{
+        font-weight: 700 !important;
+        letter-spacing: 0rem;
+        text-transform: uppercase;
+        font-size: .83rem !important;
+        height: var(--nvbar-height);
+    }
+    .rightnav .user-options{
+        margin-right: 0rem;
+    }
+    .rightnav .user-options a:last-child{
+        margin-right: 0rem;
+    }
+    .regis-bar h5{
+        text-transform: uppercase;
+        padding: 0rem 10%;
+        font-size: .85rem;
+        color: white;
+        line-height: 50px;
+    }
+}

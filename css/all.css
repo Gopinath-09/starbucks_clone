@@ -1,0 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+:root{
+    --color-lgreen: #00754a;
+    --color-dgreen: #1e3932;
+    --color-text-black: rgb(21, 21, 21);
+    --nvbar-height1: 5.7rem;
+    --nvbar-height: 4.7rem;
+}
